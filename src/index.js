@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var point_1 = require("./objects/point");
+var cartesian_plane_1 = require("./objects/cartesian-plane");
+var point1 = new point_1.Point(1, 5);
+var point2 = new point_1.Point(7, 2);
+var point3 = new point_1.Point(11, 8);
+console.log(cartesian_plane_1.CartesianPlane.distanceBetweenTwoPoints(point1, point2));
+var cartesianPlane = new cartesian_plane_1.CartesianPlane([point1, point2, point3]);
+console.log(cartesianPlane.totalDistanceBetweenPoints());
